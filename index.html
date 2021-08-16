@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="gamesec">
+        <div class="targetshow">
+            <div class="menu">
+                <div class="b-indicator">
+                    <span>[</span>
+                    <div class="indicator-out"></div>
+                    <span>]</span>
+                </div>
+
+                <div class="scores">
+                    <span>Scores:</span>
+                    <span id="scores">0</span>
+                </div>
+
+                <div class="scores">
+                    <span>Time:</span>
+                    <span id="timerOut">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>Blocks Game</h1>
+            <p>Enter your name:</p>
+            <div class="username-block">
+                <input id='input-user-name' type="text" maxlength="15" value="">
+            </div>
+            <div class="button-wrap">
+                <button id='get-user-name'>submit</button>
+            </div>
+        </div>
+        <div class="rules">
+            <h2>Rules</h2>
+            <p></p>
+            <table>
+                <tr>
+                    <td>block</td>
+                    <td>x1</td>
+                    <td>x2</td>
+                    <td>x3</td>
+                </tr>
+                <tr>
+                    <td>green</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>24</td>
+                </tr>
+
+                <tr>
+                    <td>red</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>coral</td>
+                    <td>6</td>
+                    <td>16</td>
+                    <td>26</td>
+                </tr>
+
+
+                <tr>
+                    <td>violet</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>24</td>
+                </tr>
+
+
+                <tr>
+                    <td>purple</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>28</td>
+                </tr>
+
+                <tr>
+                    <td>blue</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>16</td>
+                </tr>
+
+                <tr>
+                    <td>aqua</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>gold</td>
+                    <td>15</td>
+                    <td>30</td>
+                    <td>45</td>
+                </tr>
+            </table>
+            <div>
+                <button id='gamestart'>lets play</button>
+            </div>
+        </div>
+        <div class="game-ended" style='display: none;'>
+            <h2>Time is Over</h2>
+            <p>Check the Statistic below</p>
+            <table>
+                <tr>
+                    <td colspan="2">Game Statistic</td>
+                </tr>
+                <tr>
+                    <td class="nick-name-out" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Scores: </td>
+                    <td class="scores-out"></td>
+                </tr>
+                <tr>
+                    <td>Pairs Total:</td>
+                    <td class="amount-of-pairs-out"></td>
+                </tr>
+                <tr>
+                    <td>Combos X2 Total:</td>
+                    <td class="amount-of-combosx2-out"></td>
+                </tr>
+
+                <tr>
+                    <td>Combos X3 Total:</td>
+                    <td class="amount-of-combosx3-out"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="top-players" style='display: none;'></div>
+        <div class="wrap">
+            <div class="select"></div>
+            <div class="colum-1">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="colum-2">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="colum-3">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="colum-4">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
